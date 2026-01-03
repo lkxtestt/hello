@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hello — Simple Homepage</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Hello</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Welcome to Hello</h2>
+        <p>A simple, responsive homepage you can build on.</p>
+        <p><a class="btn" href="#about">Learn more</a></p>
+      </div>
+    </section>
+
+    <section id="about" class="container content">
+      <h3>About</h3>
+      <p>This is a minimal starter homepage. Use it as a template for docs, a project landing page, or a quick demo.</p>
+    </section>
+
+    <section id="features" class="container features">
+      <div class="feature">
+        <h4>Clean</h4>
+        <p>Simple structure and lightweight CSS so it loads fast.</p>
+      </div>
+      <div class="feature">
+        <h4>Responsive</h4>
+        <p>Works nicely on mobile and desktop out of the box.</p>
+      </div>
+      <div class="feature">
+        <h4>Easy to edit</h4>
+        <p>All markup and styles are plain and straightforward.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="container content">
+      <h3>Contact</h3>
+      <p>Want this deployed or added to your repo? I can add these files and create a branch for you.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Hello — Built with ♥</small>
+    </div>
+  </footer>
+
+  <script>
+    // small script to set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
